@@ -1,0 +1,22 @@
+{
+  "name": "wes-dawson",
+  "description": "personal website",
+  "main": "index.js",
+  "authors": [
+    "Wes Dawson"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/wesdawson/Wes-Dawson",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6"
+  }
+}
