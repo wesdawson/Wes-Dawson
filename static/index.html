@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Bootstrap 101 Template</title>
+  <title>Wes Dawson</title>
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
@@ -47,39 +47,47 @@
     </nav>
   </div>
 
-  <!-- breaks casuse wtf navbar!? -->
-  <br><br><br>
 
-  <!-- First Div INTRO -->
 
-  <div class="container-fluid">
-    <div class="row">
-      <div>
-        <h1><strong>What should be here?</strong></h1>
-        <img  src="images/pretty-backgrounds.jpg" alt="image error"/>
+
+  <!-- Section 1 -->
+  <section id="intro" data-speed="6" data-type="background">
+      <div class="container">
+          <h1 style="color:white;">Wesley Dawson</h1>
+          <p style="color:white;">web developer</p>
       </div>
-    </div>
-  </div>
-
-
-
-  <!-- Second Div ABOUT -->
-  <div class="container-fluid">
-    <div class="row">
-      <div>
-        <h3>About Section</h3>
+  </section>
+  <!-- Section 2 -->
+  <section id="home" data-speed="4" data-type="background">
+      <div class="container">
+          More content goes here!
       </div>
-    </div>
-  </div>
-
-  <!-- Third Div PROJECTS -->
-  <div class="container-fluid">
-    <div class="row">
-      <div>
-
+  </section>
+  <!-- Section 3 -->
+  <section id="about" data-speed="2" data-type="background">
+      <div class="container">
+          This is the final section!
       </div>
-    </div>
-  </div>
+  </section>
+
+  <script type="text/javascript">$(document).ready(function(){
+     // cache the window object
+     $window = $(window);
+     $('section[data-type="background"]').each(function(){
+     // declare the variable to affect the defined data-type
+     var $scroll = $(this);
+     $(window).scroll(function() {
+     // HTML5 proves useful for helping with creating JS functions!
+     // also, negative value because we're scrolling upwards
+     var yPos = -($window.scrollTop() / $scroll.data('speed'));
+     // background position
+     var coords = '50% '+ yPos + 'px';
+     // move the background
+     $scroll.css({ backgroundPosition: coords });
+     }); // end window scroll
+     });  // end section function
+     }); // close out script
+     </script>
 
 </body>
 </html>
