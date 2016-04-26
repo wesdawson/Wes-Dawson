@@ -7,7 +7,7 @@
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding: 250px 0;
 }
-#home {
+#about {
     background: url(../images/home.jpg) 50% 0 fixed;
     height: auto;
     margin: 0 auto;
@@ -16,7 +16,7 @@
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding: 200px 0;
 }
-#about {
+#contact {
     background: url(../images/about.jpg) 50% 0 fixed;
     height: auto;
     margin: 0 auto;
@@ -25,4 +25,9 @@
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
     padding: 250px 0;
     color: #fff;
+}
+
+/** NAVBAR transparent **/
+.navbar-inner {
+        background-color: rgba(0, 0, 0, 0.3);
 }
