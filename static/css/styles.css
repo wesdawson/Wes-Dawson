@@ -1,6 +1,11 @@
+body {
+  font-family:sans-serif;
+}
+
+/** Sections parallax backgroud **/
 #intro {
     background: url(../images/intro.jpg) 50% 0 fixed;
-    height: auto;
+    height: 100vh;
     margin: 0 auto;
     width: 100%;
     position: relative;
@@ -14,11 +19,11 @@
     width: 100%;
     position: relative;
     box-shadow: 0 0 50px rgba(0,0,0,0.8);
-    padding: 200px 0;
+    padding: 100px 0;
 }
 #contact {
     background: url(../images/about.jpg) 50% 0 fixed;
-    height: auto;
+    height: 100vh;
     margin: 0 auto;
     width: 100%;
     position: relative;
@@ -30,4 +35,9 @@
 /** NAVBAR transparent **/
 .navbar-inner {
         background-color: rgba(0, 0, 0, 0.3);
+}
+
+.brand-heading {
+  font-size: 40px;
+  color: white;
 }
