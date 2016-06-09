@@ -29,6 +29,10 @@ html {
     }
 }
 
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -105,7 +109,7 @@ html {
     .navbar-custom.top-nav-collapse {
         padding: 0;
         border-bottom: 1px solid rgba(255,255,255,.3);
-        background: #424445;
+        background-color: #424445;
     }
 }
 
